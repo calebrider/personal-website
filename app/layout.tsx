@@ -16,9 +16,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth min-h-screen">
-      <span className='flex justify-center px-10 bg-red-600 font-bold text-white w-full'>
-        Note: This website is a work in progress. Some information/links may be missing and/or incomplete :)
-      </span>
       <body className="min-h-screen">{children}</body>
     </html>
   )
