@@ -13,7 +13,7 @@ export default function Contact() {
                 <FaGithub size={50} color={"rgb(37 99 235)"} className="hover:cursor-pointer hover:scale-105 duration-200 ease-in-out"/>
             </div>
             <div className="flex items-center justify-center pb-20">
-                <p>Don't hesitate to reach out!</p>
+                <p>Don&apos;t hesitate to reach out!</p>
             </div>
         </div>
     )

@@ -10,8 +10,8 @@ export default function About() {
                 <div className="flex flex-col space-y-4 m-6 p-10">
                     <h1 className="text-5xl tracking-wide">Caleb Rider</h1>
                     <h2 className="text-xl tracking-wide">Software Engineer</h2>
-                    <p>Hi! I'm a software engineer based out of Richmond, VA.<br/>
-                    I've been working professionally since May 2020,<br/>
+                    <p>Hi! I&apos;m a software engineer based out of Richmond, VA.<br/>
+                    I&apos;ve been working professionally since May 2020,<br/>
                     and most of my professional software experience consists of<br/>
                     back-end development in both C# (.NET) and Python.<br/>
                     I also enjoy front-end development in my spare time.
