@@ -6,24 +6,23 @@ export default function About() {
             <div className="flex justify-center w-full">
                 <h1 className="text-6xl tracking-wide pt-10">About</h1>
             </div>
-            <div className="flex flex-wrap items-center justify-around p-10">
-                <div className="flex flex-col space-y-4 m-6 p-10">
-                    <h1 className="text-5xl tracking-wide">Caleb Rider</h1>
+            <div className="flex flex-col items-center justify-around pb-10">
+                <div className="flex flex-col space-y-4 max-w-sm lg:max-w-lg p-10">
+                    <h1 className="text-4xl tracking-wide">Caleb Rider</h1>
                     <h2 className="text-xl tracking-wide">Software Engineer</h2>
-                    <p>Hi! I&apos;m a software engineer based out of Richmond, VA.<br/>
-                    I&apos;ve been working professionally since May 2020,<br/>
-                    and most of my professional software experience consists of<br/>
-                    back-end development in both C# (.NET) and Python.<br/>
+                    <p>Hi! I&apos;m a software engineer based out of Richmond, VA.
+                    I&apos;ve been working professionally since May 2020,
+                    and most of my professional software experience consists of
+                    back-end development in both C# (.NET) and Python.
                     I also enjoy front-end development in my spare time.
                     </p>
                 </div>
-                <div className="min-w-max">
+                <div className="relative w-52 h-52 sm:w-72 sm:h-72">
                     <Image
-                        className="rounded-full"
+                        className="rounded-full w-auto"
                         src="/headshot.jpg"
                         alt="Headshot"
-                        width={300}
-                        height={300}
+                        fill={true}
                         priority
                     />
                 </div>

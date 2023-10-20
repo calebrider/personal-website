@@ -8,7 +8,7 @@ export default function Skills() {
             <div className="flex justify-center w-full">
                 <h1 className="text-6xl tracking-wide pt-10">Skills</h1>
             </div>
-            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-6 p-10 m-6 justify-center items-center">
+            <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-3 sm:gap-5 py-10 my-6 justify-center items-center">
                 {skills.map((skill: string) => (
                     <Skill key={skill} skill={skill}/>
                 ))}
