@@ -8,6 +8,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        "primary": "#3f37c9",
+        "secondary": "#4361ee",
+        "accent": "#f72585"
+      },
+      padding: {
+        "margin-padding": "10%"
+      },
+      backgroundSize: {
+        'size-200': '200% 200%',
+      },
+      backgroundPosition: {
+          'pos-0': '0% 0%',
+          'pos-100': '100% 100%',
+      },
     },
   },
   plugins: [],

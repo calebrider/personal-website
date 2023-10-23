@@ -4,7 +4,7 @@ export default function Skills() {
     var skills = [".NET (C#)", "Python", "TypeScript", "Next.js", "MongoDB", "SQL", "Azure", "AWS Lambda", "CI/CD", "OOP", "REST APIs", "GitHub"]
 
     return (
-        <div id="skills" className="flex flex-col w-5/6 scroll-mt-20 border-t-2 border-t-gray-200">
+        <div id="skills" className="flex flex-col scroll-mt-20 bg-neutral-50 w-full px-margin-padding">
             <div className="flex justify-end pt-10">
                 <h1 className="text-2xl tracking-wide text-gray-500">Skills</h1>
             </div>
