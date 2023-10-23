@@ -15,7 +15,7 @@ export default function Project(props: any) {
                 </ul>
             </div>
             <div className="flex justify-center h-1/5">
-                <Link href={(props.url ?? "")} className="h-1/2 w-1/2 text-center py-2 text-white rounded-full transition-all duration-500 bg-gradient-to-l from-primary via-accent to-primary bg-size-200 bg-pos-100 hover:bg-pos-0">Hover me</Link>
+                <Link href={(props.url ?? "")} className="h-min w-1/2 text-center py-2 text-white rounded-full transition-all duration-500 bg-gradient-to-l from-primary via-accent to-primary bg-size-200 bg-pos-100 hover:bg-pos-0">{props.button}</Link>
             </div>
         </div>
     )
