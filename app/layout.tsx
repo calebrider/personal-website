@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   description: 'My personal website',
 }
 
+
 export default function RootLayout({
   children,
 }: {
@@ -14,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className="flex flex-col max-w-screen min-h-screen">
-        <span className='flex justify-center px-10 bg-red-600 font-bold text-white w-full'>
+        <span className='flex justify-center px-10 bg-red-600 font-bold text-white w-full font-sans'>
           Note: This website is a work in progress. Some features may be incomplete.
         </span>
         {children}

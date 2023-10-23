@@ -1,9 +1,10 @@
 import Image from "next/image"
 
+
 export default function About() {
     return (
-        <div id="about" className="flex flex-col scroll-mt-20 w-full px-margin-padding">
-            <div className="flex pt-10 justify-end">
+        <div id="about" className="flex flex-col items-center scroll-mt-20 w-full px-margin-padding">
+            <div className="pt-10">
                 <h1 className="text-2xl tracking-wide text-gray-500">About</h1>
             </div>
             <div className="flex flex-col lg:flex-row lg:justify-center items-center content-start lg:content-center py-8 lg:py-16 gap-8 lg:gap-24">
