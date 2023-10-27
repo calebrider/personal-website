@@ -8,8 +8,8 @@ export default function Project(props: any) {
             <div className="flex justify-center items-center">
                 <span className="font-bold text-xl tracking-wide text-gray-900">{props.title}</span>
             </div>
-            <div className="flex flex-col h-fit">
-                <span className="px-8 pt-2 text-start text-gray-900">Technologies Used:</span>
+            <div className="flex flex-col w-5/6 h-fit">
+                <span className="px-6 text-start text-gray-700">Skills Used:</span>
                 <ul className="px-8 py-2">
                     {(props.technologies ?? []).map((technology: string) => (
                         <div key={technology} className="flex flex-row justify-start items-center">
