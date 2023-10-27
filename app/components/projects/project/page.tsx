@@ -20,7 +20,7 @@ export default function Project(props: any) {
                 </ul>
             </div>
             <div className="flex justify-center items-end w-fit mt-auto">
-                <GradientButton href={(props.href ?? "")} title={props.buttonTitle}/>
+                <GradientButton href={(props.href ?? "")} title={props.buttonTitle} target={props.target}/>
             </div>
         </div>
     )

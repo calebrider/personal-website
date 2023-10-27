@@ -14,7 +14,7 @@ export default function Projects() {
             <div className="flex justify-center">
                 <div className="grid lg:grid-cols-2 w-fit gap-5 lg:gap-10 py-8 lg:py-16">
                     <Project title="This Website" technologies={websiteTechnologies} buttonTitle="View Code" href="https://github.com/calebrider/personal-website"/>
-                    <Project title="Unity Game" technologies={gameTechnologies} buttonTitle="Play" href="/game"/>
+                    <Project title="Unity Game" technologies={gameTechnologies} buttonTitle="Play" target="_blank" href="/game"/>
                 </div>
             </div>
         </div>
