@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Project(props: any) {
     return (
-        <div className="flex flex-col items-center shadow-md rounded-md w-120 gap-6 py-8 bg-neutral-100">
+        <div className="flex flex-col items-center shadow-md rounded-md w-full gap-6 py-8 bg-neutral-100">
             <div className="flex justify-center items-center">
                 <span className="font-bold text-xl tracking-wide text-gray-900">{props.title}</span>
             </div>
@@ -28,8 +28,10 @@ export default function Project(props: any) {
                     ))}
                 </ul>
             </div>
-            <div className="flex justify-center items-end w-fit mt-auto">
-                <GradientButton href={(props.href ?? "")} title={props.buttonTitle} target={props.target}/>
+            <div className="flex flex-wrap justify-center gap-4 items-end mt-auto">
+                {(props.buttons ?? []).map((button: any) => (
+                    <GradientButton key={button} href={(button.href ?? "")} title={button.buttonTitle} target={button.target}/>
+                ))}
             </div>
         </div>
     )
