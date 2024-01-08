@@ -3,9 +3,19 @@ import Project from "./project/page"
 
 export default function Projects() {
     var websiteTechnologies = ['Next.js', 'TypeScript', 'Tailwind CSS']
-    var projectTechnologies = ['Next.js', 'TypeScript', 'Tailwind CSS', 'MongoDB', 'Amadeus API']
+    var workoutAppTechnologies = ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Google Cloud']
     var gameTechnologies = ['C#', 'OOP', 'Unity']
 
+    var workoutAppSiteButton = {
+        buttonTitle: "View Web App",
+        href: "https://workout-app.calebrider.dev/",
+        target: "_blank"
+    }
+    var workoutAppCodeButton = {
+        buttonTitle: "View Code",
+        href: "https://github.com/calebrider/workout-app",
+        target: "_blank"
+    }
     var websiteCodeButton = {
         buttonTitle: "View Code",
         href: "https://github.com/calebrider/personal-website",
@@ -30,8 +40,9 @@ export default function Projects() {
                 <h1 className="text-2xl tracking-wide text-gray-500">Projects</h1>
             </div>
             <div className="flex justify-center">
-                <div className="grid lg:grid-cols-2 w-fit gap-5 lg:gap-10 py-8 lg:py-16">
+                <div className="grid lg:grid-cols-3 w-fit gap-5 lg:gap-10 py-8 lg:py-16">
                     <Project title="This Website" src="/website-screenshot.jpg" technologies={websiteTechnologies} buttons={[websiteCodeButton]}/>
+                    <Project title="Workout Tracking App" src="/workout-app-screenshot.jpg" technologies={workoutAppTechnologies} buttons={[workoutAppSiteButton, workoutAppCodeButton]}/>
                     <Project title="Unity Game" src="/game-screenshot.jpg" technologies={gameTechnologies} buttons={[gameCodeButton, gamePlayButton]}/>
                 </div>
             </div>
