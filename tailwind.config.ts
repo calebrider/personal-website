@@ -18,7 +18,14 @@ const config: Config = {
       colors: {
         "primary": "#3f37c9",
         "secondary": "#4361ee",
-        "accent": "#f72585"
+        "accent": "#f72585",
+        "background": "#efeff2ff",
+        "background-alternate": "#f2f2f2ff",
+        "surface": "#f9f9f9ff",
+        "primary-text": "#353535ff",
+        "secondary-text": "#4c4c4cff",
+        "success": "#4BB543",
+        "error": "#FF3333",
       },
       fontFamily: {
         sans: ['var(--font-poppins)']

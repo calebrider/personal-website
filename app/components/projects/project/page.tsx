@@ -1,14 +1,17 @@
 import GradientButton from "../../gradient-button/page"
-import { FaDotCircle } from "react-icons/fa"
+import { FaCheck } from "react-icons/fa"
 import Image from "next/image"
 
 export default function Project(props: any) {
+    const technologies = props.technologies ?? []
+    const isOddCount = technologies.length % 2 === 1
+
     return (
-        <div className="flex flex-col items-center shadow-md rounded-md w-full gap-6 py-8 bg-neutral-100">
+        <div className="flex flex-col items-center shadow-md rounded-md w-full gap-6 py-8 bg-surface">
             <div className="flex justify-center items-center">
-                <span className="font-bold text-xl tracking-wide text-gray-900">{props.title}</span>
+                <span className="uppercase text-lg tracking-wide text-gray-900">{props.title}</span>
             </div>
-            <div className="flex w-5/6">
+            <div className="flex justify-center w-5/6">
                 <Image 
                     src={props.src}
                     alt="Headshot"
@@ -17,18 +20,27 @@ export default function Project(props: any) {
                     className="max-w-sm h-auto w-full shadow-lg rounded-md"
                 />
             </div>
-            <div className="flex flex-col w-5/6 h-full">
-                <span className="px-6 text-center text-gray-600 font-bold">Skills Used:</span>
-                <ul className="flex flex-wrap h-full justify-center items-center px-8 pt-2">
-                    {(props.technologies ?? []).map((technology: string) => (
-                        <div key={technology} className="flex flex-row justify-start items-center">
-                            <FaDotCircle color={"#3f37c9"} className="hover:cursor-pointer hover:color-accent ml-2 scale-50"/>
-                            <li className="text-primary py-1">{technology}</li>
-                        </div>
-                    ))}
+            <div className="flex flex-col w-5/6">
+                <span className="px-6 text-center text-primary-text uppercase">Skills Used:</span>
+                <ul className="grid grid-cols-2 h-full px-2 pt-2 gap-x-4">
+                    {technologies.map((technology: string, index: number) => {
+                        const isLast = index === technologies.length - 1
+
+                        return (
+                        <li
+                            key={technology}
+                            className={`flex items-center py-1 text-sm text-secondary-text
+                            ${isLast && isOddCount ? "col-span-2" : ""}
+                            `}
+                        >
+                            <FaCheck color="#4BB543" className="ml-2 mr-2 scale-50" />
+                            <span>{technology}</span>
+                        </li>
+                        )
+                    })}
                 </ul>
             </div>
-            <div className="flex flex-wrap justify-center gap-4 items-end mt-auto">
+            <div className="flex justify-center gap-4 items-end mt-auto">
                 {(props.buttons ?? []).map((button: any) => (
                     <GradientButton key={button.href} href={(button.href ?? "")} title={button.buttonTitle} target={button.target}/>
                 ))}

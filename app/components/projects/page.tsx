@@ -37,7 +37,7 @@ export default function Projects() {
     return (
         <div id="projects" className="flex flex-col items-center scroll-mt-20 w-full px-margin-padding">
             <div className="pt-10">
-                <h1 className="text-2xl tracking-wide text-gray-500">Projects</h1>
+                <h1 className="text-2xl uppercase tracking-wide text-gray-500">Projects</h1>
             </div>
             <div className="flex justify-center">
                 <div className="grid lg:grid-cols-3 w-fit gap-5 lg:gap-10 py-8 lg:py-16">
