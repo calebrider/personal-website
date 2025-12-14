@@ -13,11 +13,11 @@ export default function About() {
                     <div className="flex flex-col">
                         <h1 className="text-4xl tracking-wide text-primary-text">Caleb Rider</h1>
                         <h2 className="pt-2 text-xl tracking-wide text-primary-text">Software Engineer</h2>
-                        <p className="pt-5 max-w-sm text-secondary-text">Hello! I&apos;m a software engineer based out of Richmond, VA.
-                        I&apos;ve been working professionally since May 2020,
-                        and most of my professional software experience consists of
-                        back-end development in both C# (.NET) and Python.
-                        I also enjoy front-end development in my spare time.
+                        <p className="pt-5 max-w-sm text-secondary-text">Hello! I&apos;m a software engineer based out of Richmond, VA, and
+                        I&apos;ve been working professionally since May 2020. I&apos;m a backend-leaning software engineer with experience designing, 
+                        building, and operating cloud-native systems in production. I&apos;ve built and maintained REST and GraphQL APIs in Python and C#, 
+                        designed serverless architectures on AWS and Azure, and worked hands-on with databases, observability, 
+                        and performance testing in high-traffic environments.
                         </p>
                         <div className="flex mx-auto py-8">
                             <GradientButton href="/caleb_rider_software_engineer_resume.pdf" title="View Resume"/>
