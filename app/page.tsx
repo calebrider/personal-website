@@ -15,7 +15,7 @@ const poppins = Poppins({
 
 export default function Home() {
   return (
-    <main className={`flex flex-col items-center min-h-screen bg-white ${poppins.variable} font-sans`}>
+    <main className={`flex flex-col items-center min-h-screen bg-background ${poppins.variable} font-sans`}>
       <Navigation/>
       <About/>
       <Skills/>

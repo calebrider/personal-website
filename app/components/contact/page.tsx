@@ -7,7 +7,7 @@ export default function Contact() {
     return (
         <div id="contact" className="flex flex-col justify-center items-center scroll-mt-20 w-full px-margin-padding bg-gradient-to-b from-secondary to-primary to-80%">
             <div className="pt-10">
-                <h1 className="text-2xl tracking-wide text-white">Contact</h1>
+                <h1 className="text-2xl uppercase tracking-wide text-white">Contact</h1>
             </div>
             <div className='flex justify-center'>
                 <div className="flex flex-col items-center pt-8 lg:pt-16">
