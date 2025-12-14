@@ -30,7 +30,7 @@ export default function Project(props: any) {
             </div>
             <div className="flex flex-wrap justify-center gap-4 items-end mt-auto">
                 {(props.buttons ?? []).map((button: any) => (
-                    <GradientButton key={button} href={(button.href ?? "")} title={button.buttonTitle} target={button.target}/>
+                    <GradientButton key={button.href} href={(button.href ?? "")} title={button.buttonTitle} target={button.target}/>
                 ))}
             </div>
         </div>
